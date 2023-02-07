@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fecha Actual</title>
+</head>
+<body>
+    <script>
+
+        function fechaActual() {
+
+            var fecha = new Date();
+
+            var dia = fecha.getDate();
+
+            var mes = fecha.getMonth();
+
+            var año = fecha.getFullYear();
+
+            document.write("La fecha actual es: " + dia + "/" + mes + "/" + año);
+
+        }
+
+        fechaActual();
+
+    </script>
+</body>
+</html>

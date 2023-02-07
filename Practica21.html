@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular edad</title>
+</head>
+<body>
+    <script>
+
+        var fecha = prompt("Introduce tu fecha de nacimiento: ");
+
+        var fechaActual = new Date();
+
+        var fechaNacimiento = new Date(fecha);
+
+        var edad = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
+
+        var mes = fechaActual.getMonth() - fechaNacimiento.getMonth();
+
+        if (mes < 0 || (mes === 0 && fechaActual.getDate() < fechaNacimiento.getDate())) {
+
+            edad--;
+
+        }
+
+        document.write("Tienes " + edad + " años");
+
+    </script>
+</body>
+</html>

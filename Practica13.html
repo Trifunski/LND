@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hora Actual</title>
+</head>
+<body>
+    <script>
+
+        function horaActual() {
+
+            var fecha = new Date();
+
+            var hora = fecha.getHours();
+
+            var minutos = fecha.getMinutes();
+
+            var segundos = fecha.getSeconds();
+
+            document.write("La hora actual es: " + hora + ":" + minutos + ":" + segundos);
+
+        }
+
+        horaActual();
+
+    </script>
+</body>
+</html>

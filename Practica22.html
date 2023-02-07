@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elegir entre 4 operaciones matematicas</title>
+</head>
+<body>
+    <script>
+
+        var operacion = prompt("Introduce la operación que quieres realizar: suma, resta, multiplicación o división");
+
+        var numero1 = parseInt(prompt("Introduce el primer número"));
+
+        var numero2 = parseInt(prompt("Introduce el segundo número"));
+
+        if (operacion == "suma") {
+
+            document.write("El resultado de la suma es: " + (numero1 + numero2));
+
+        } else if (operacion == "resta") {
+
+            document.write("El resultado de la resta es: " + (numero1 - numero2));
+
+        } else if (operacion == "multiplicación") {
+
+            document.write("El resultado de la multiplicación es: " + (numero1 * numero2));
+
+        } else if (operacion == "división") {
+
+            document.write("El resultado de la división es: " + (numero1 / numero2));
+
+        } else {
+
+            document.write("No has introducido una operación válida");
+
+        }
+
+    </script>
+</body>
+</html>

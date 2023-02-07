@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matriz con 10 Elementos</title>
+</head>
+<body>
+    <script>
+
+        var matriz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        var suma = 0;
+
+        for (var i = 0; i < matriz.length; i++) {
+
+            suma += matriz[i];
+
+        }
+
+        var media = suma / matriz.length;
+
+        document.write("La suma es: " + suma + "<br>");
+
+        document.write("La media es: " + media + "<br>");
+
+        if (media > 3) {
+
+            document.write("La media es mayor a 3");
+
+        } else if (media < 3) {
+
+            document.write("La media es menor a 3");
+
+        } else {
+
+            document.write("La media es igual a 3");
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suma y Media</title>
+</head>
+<body>
+    <script>
+
+        // Suma y media indicando cuantos valores quieres introducir e introducir los valores.
+
+        var suma = 0;
+
+        var media = 0;
+
+        var valores = parseInt(prompt("¿Cuantos valores quieres introducir?"));
+
+        for (var i = 0; i < valores; i++) {
+
+            var numero = parseInt(prompt("Introduce un número"));
+
+            suma += numero;
+
+        }
+
+        media = suma / valores;
+
+        document.write("La suma es: " + suma + "<br>");
+
+        document.write("La media es: " + media + "<br>");
+
+    </script>
+</body>
+</html>

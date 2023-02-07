@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambiar Color de Fondo</title>
+</head>
+<body>
+    <script>
+
+        function cambiarColor() {
+
+            var color = document.getElementById("color").value;
+
+            document.body.style.backgroundColor = color;
+
+        }
+
+        document.write("<input type='color' id='color' placeholder='Color'><br><br>");
+        document.write("<button onclick='cambiarColor()'>Cambiar Color</button>");
+
+    </script>
+</body>
+</html>

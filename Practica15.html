@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fecha actual con el mes en caracteres</title>
+</head>
+<body>
+    <script>
+
+        function fechaActual() {
+
+            var fecha = new Date();
+
+            var dia = fecha.getDate();
+
+            var mes = fecha.getMonth();
+
+            var año = fecha.getFullYear();
+
+            var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+            document.write("La fecha actual es: " + dia + " de " + meses[mes] + " de " + año);
+
+        }
+
+        fechaActual();
+
+    </script>
+</body>
+</html>

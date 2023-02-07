@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matriz con distintos tipos de variables</title>
+</head>
+<body>
+    <script>
+
+        var matriz = new Array();
+
+        matriz[0] = "Hola Mundo";
+        matriz[1] = 10;
+        matriz[2] = 10.5;
+        matriz[3] = true;
+        matriz[4] = false;
+        matriz[5] = null;
+        matriz[6] = undefined;
+        matriz[7] = new Date();
+        matriz[8] = new Array();
+        matriz[9] = new Object();
+
+        for (var i = 0; i < matriz.length; i++) {
+            document.write(matriz[i] + "<br>");
+        }
+
+    </script>
+</body>
+</html>

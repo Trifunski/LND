@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNI</title>
+</head>
+<body>
+    <script>
+
+        // Dado el DNI que el programa calcule qué letra corresponde
+
+        function averigua () {
+            cadena="TRWAGMYFPDXBNJZSQVHLCKET";
+            posicion = formulario.dni.value % 23;
+            letra = cadena.charAt(posicion);
+            document.formulario.dni.value = formulario.dni.value + " - " + letra;
+        } 
+
+        document.write("<form name='formulario'>");
+        document.write("<input type='text' name='dni' maxlength='9'>");
+        document.write("<input type='button' value='Calcular' onclick='averigua()'>");
+
+    </script>
+</body>
+</html>
